@@ -1,4 +1,4 @@
-# SpaceX | My Arch Linux rise
+# SpaceX | My Arch Linux rice
 
 ### Info
 * **OS**: [Arch Linux](https://www.archlinux.org/)
