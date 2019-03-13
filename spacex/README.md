@@ -23,9 +23,9 @@
 
 ### Screenshots
 
-![workspace](https://github.com/asc11cat/dots/blob/master/screenshots/main.png)
-![firefox](https://github.com/asc11cat/dots/blob/master/screenshots/firefox.png)
-![vscode](https://github.com/asc11cat/dots/blob/master/screenshots/vscode.png)
+![workspace](https://github.com/asc11cat/dots/blob/master/spacex/screenshots/main.png)
+![firefox](https://github.com/asc11cat/dots/blob/master/spacex/screenshots/firefox.png)
+![vscode](https://github.com/asc11cat/dots/blob/master/spacex/screenshots/vscode.png)
 
 #### P.S:
 idk why SpaceX tho, just a random name
