@@ -1,4 +1,4 @@
-# Nord | Arch Linux rise
+# Nord | Arch Linux rice
 
 ### Info
 
