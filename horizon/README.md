@@ -1,4 +1,4 @@
-# Nord | Arch Linux rice
+# Horizon | openSUSE rice
 
 ### Info
 
