@@ -1,0 +1,48 @@
+#! /bin/sh
+
+sxhkd &
+
+# monitors #
+bspc monitor DVI-D-0 -d 1 2 3 4 5
+bspc monitor HDMI-0 -d 6 7 8 9 0
+
+# config #
+bspc config border_width         0
+bspc config window_gap          12
+bspc config split_ratio          0.52
+bspc config borderless_monocle   true
+bspc config gapless_monocle      true
+bspc config focus_follows_pointer true
+
+# window spawn rules #
+
+# firefox on first monitor
+bspc rule -a Firefox -o desktop=^1
+
+# firefox on second monitor
+bspc rule -a Firefox -o desktop=^8
+
+# telegram on second monitor
+bspc rule -a TelegramDesktop -o desktop=^9
+
+# vscode on second monitor
+bspc rule -a Code -o desktop=^7 
+
+# urxvt on second monitor
+bspc rule -a urxvt -o desktop=^6
+
+# autostart #
+
+# change layout
+setxkbmap -layout 'us,ru' -option grp:alt_shift_toggle
+
+# set wallpapers 
+hsetroot -solid "#242631"
+
+# start polybar
+$HOME/Scripts/polybar.sh
+
+# start telegram
+telegram-desktop
+
+

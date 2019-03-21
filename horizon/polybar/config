@@ -1,0 +1,69 @@
+
+[colors]
+background  = #1C1E26
+foreground  = #FFFFFF
+
+[settings]
+screenchange-reload = true
+
+[global/wm]
+margin-top = 0
+margin-bottom = 0
+
+[bar/top]
+enable-ipc = true
+monitor = ${env:MONITOR:HDMI-1}
+width = 100%
+height = 25
+
+background = ${colors.background}
+foreground = ${colors.foreground}
+
+font-0 = Inconsolata:pixelsize=9;1
+font-1 = Wuncon Siji:pixelsize=9;1
+
+overline-size = 2
+border-bottom-size = 0
+
+padding-left = 0
+padding-right = 2
+
+module-margin-left = 1
+module-margin-right = 1
+
+modules-left = bspwm xwindow
+modules-center = date
+modules-right = time
+
+tray-position = right
+tray-padding = 0
+tray-maxsize = 16
+
+separator = | 
+
+[module/bspwm]
+type = internal/bspwm
+pin-workspaces = true
+enable-click = true
+enable-scroll = true
+reverse-scroll = true
+
+label-focused-foreground = #E95378
+label-occupied-foreground = #FAB38E
+
+[module/date]
+type = internal/date
+label = %{F#E95378}%{F-} %date%
+date = %a, %b %d
+interval = 5
+
+[module/time]
+type= internal/date
+label = %{F#E95378}%{F-} %time%
+time = %OI:%M %p
+interval = 5
+
+[module/xwindow]
+type = internal/xwindow
+format = <label>
+label-maxlen = 50
