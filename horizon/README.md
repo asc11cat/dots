@@ -16,7 +16,7 @@
 
 * **Bar**: [polybar](https://github.com/jaagr/polybar)  // Polybar config is based on [clock_enthusaist polybar](https://www.reddit.com/r/unixporn/comments/7l4uec/i3_nord_everything/)
 
-* **VS Code theme**: [Nord](https://marketplace.visualstudio.com/items?itemName=jolaleye.horizon-theme-vscode)
+* **VS Code theme**: [Horizon](https://marketplace.visualstudio.com/items?itemName=jolaleye.horizon-theme-vscode)
 
 * **Xresources theme**: [Horizon Xresources](https://github.com/asc11cat/dots/blob/master/horizon/.Xresources) // Not official Horizon colorscheme, just a port by me.
 
