@@ -1,7 +1,7 @@
 #!/bin/sh
 #
 # ufetch-suse - tiny system info for suse
-
+# credits to https://github.com/jschx/ufetch
 ## INFO
 
 # user is already defined
