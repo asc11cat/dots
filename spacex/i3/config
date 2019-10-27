@@ -1,9 +1,7 @@
 # i3 config file
 
 set $mod Mod4
-
 font pango:monospace 8
-
 floating_modifier $mod
 
 # start a terminal
@@ -140,10 +138,10 @@ bindsym $mod+r mode "resize"
 exec_always "setxkbmap -layout us,ru"
 exec_always "setxkbmap -option 'grp:alt_shift_toggle'"
 
-#polybar
+# polybar
 exec_always /home/asc11cat/Scripts/polybar.sh
 
-#wallpaper set
+# wallpaper set
 exec_always hsetroot -solid "#18191b"
 
 # border setup
@@ -209,4 +207,3 @@ mode "$mode_gaps_outer" {
         bindsym Return mode "default"
         bindsym Escape mode "default"
 }
-
