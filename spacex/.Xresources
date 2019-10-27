@@ -37,18 +37,8 @@
 *.color7:       #c7ccd1
 *.color15:      #f3f4f5
 
-
-! urxvt font
-
-URxvt*font: xft: GohuFont Powerline:style=Powerline:pixelsize=11
-
 ! urxvt config
-
+URxvt*font: xft: GohuFont Powerline:style=Powerline:pixelsize=11
 URxvt.scrollBar: false
-
-! urxvt padding
-
 URxvt.internalBorder:  22
-
-
 URxvt.termName: rxvt-unicode
