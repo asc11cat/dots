@@ -1,7 +1,8 @@
-! Horizon Xresources, proudly copy-pasted and edited by asc11cat, lol.
+! Horizon Xresources, proudly copy-pasted and edited
 ! Based on Horizon colorscheme - https://github.com/jolaleye/horizon-theme-vscode
 ! Based on Nord colorscheme - https://github.com/arcticicestudio/nord-xresources
 
+! colors
 #define horizon0 #1C1E26
 #define horizon1 #1C1E26
 #define horizon2 #1C1E26
@@ -42,16 +43,9 @@
 *.color14: horizon7
 *.color15: horizon6
 
-! Fonts setup
+! urxvt config
 URxvt*font: xft:Inconsolata for Powerline:style=Medium:size=9
 URxvt*boldFont: xft:Inconsolata for Powerline:style=BoldForPowerline:size=9
-
-! Scrollbar
 URxvt*scrollBar: false
-
-! Padding
 URxvt.internalBorder:  25
-
-! Fading
 Urxvt*fading: 0
-
