@@ -1,24 +1,3 @@
-;==========================================================
-;
-;
-;   ██████╗  ██████╗ ██╗  ██╗   ██╗██████╗  █████╗ ██████╗
-;   ██╔══██╗██╔═══██╗██║  ╚██╗ ██╔╝██╔══██╗██╔══██╗██╔══██╗
-;   ██████╔╝██║   ██║██║   ╚████╔╝ ██████╔╝███████║██████╔╝
-;   ██╔═══╝ ██║   ██║██║    ╚██╔╝  ██╔══██╗██╔══██║██╔══██╗
-;   ██║     ╚██████╔╝███████╗██║   ██████╔╝██║  ██║██║  ██║
-;   ╚═╝      ╚═════╝ ╚══════╝╚═╝   ╚═════╝ ╚═╝  ╚═╝╚═╝  ╚═╝
-;
-;
-;   To learn more about how to configure Polybar
-;   go to https://github.com/jaagr/polybar
-;
-;   The README contains alot of information
-;
-;==========================================================
-
-;=====================================================
-;   colors
-;=====================================================
 [colors]
 material-foreground = ${xrdb:foreground}
 material-dark-background = ${xrdb:background}
@@ -26,19 +5,13 @@ material-light-background = ${xrdb:background}
 material-primary = ${xrdb:color0}
 material-warn = ${xrdb:warn}
 black = #111111
-;=====================================================
-;   variables
-;=====================================================
+
 [variables]
 bar-height = 20
 bar-border-size = 1
-
 label-padding = 1
 label-maxlen = 50
 
-;=====================================================
-;   fonts
-;=====================================================
 [fonts]
 font-0 = Gohu GohuFont:style=Regular:size=9:antialias=true;2
 font-1 = Gohu GohuFont:style=Bold:size=9:antialias=true;2
@@ -46,15 +19,11 @@ font-2 = Iosevka:size=12:antialias=true;2
 font-3 = Iosevka:size=12:weight=bold:antialias=true;2
 font-4 = Material Icons:size=11:antialias=true;3
 
-;=====================================================
-;   bar/top
-;=====================================================
 [bar/top]
 monitor = ${env:MONITOR}
 height = ${variables.bar-height}
 bottom = false
 fixed-center = true
-
 border-bottom-size = ${variables.bar-border-size}
 border-color = ${colors.black}
 
@@ -71,11 +40,7 @@ modules-left = user lsp i3 lpd ldl title
 modules-center = 
 modules-right = rld memory rsd cpu rsd rsd volume rdp date rsp time
 
-;=====================================================
-;   section/base_left_primary
-;=====================================================
 [section/base_left_primary]
-
 format-foreground = ${colors.material-foreground}
 format-background = ${colors.material-primary}
 format-connected-foreground = ${colors.material-foreground}
@@ -111,11 +76,7 @@ format-playing-padding = ${variables.label-padding}
 format-paused-padding = ${variables.label-padding}
 format-stopped-padding = ${variables.label-padding}
 
-;=====================================================
-;   section/base_left_dark
-;=====================================================
 [section/base_left_dark]
-
 format-foreground = ${colors.material-foreground}
 format-background = ${colors.material-dark-background}
 format-connected-foreground = ${colors.material-foreground}
@@ -151,11 +112,7 @@ format-playing-padding = ${variables.label-padding}
 format-paused-padding = ${variables.label-padding}
 format-stopped-padding = ${variables.label-padding}
 
-;=====================================================
-;   section/base_left_light
-;=====================================================
 [section/base_left_light]
-
 format-foreground = ${colors.material-foreground}
 format-background = ${colors.material-light-background}
 format-connected-foreground = ${colors.material-foreground}
@@ -191,11 +148,7 @@ format-playing-padding = ${variables.label-padding}
 format-paused-padding = ${variables.label-padding}
 format-stopped-padding = ${variables.label-padding}
 
-;=====================================================
-;   section/base_right_primary
-;=====================================================
 [section/base_right_primary]
-
 format-foreground = ${colors.material-foreground}
 format-background = ${colors.material-primary}
 format-connected-foreground = ${colors.material-foreground}
@@ -231,11 +184,7 @@ format-playing-padding = ${variables.label-padding}
 format-paused-padding = ${variables.label-padding}
 format-stopped-padding = ${variables.label-padding}
 
-;=====================================================
-;   section/base_right_dark
-;=====================================================
 [section/base_right_dark]
-
 format-foreground = ${colors.material-foreground}
 format-background = ${colors.material-dark-background}
 format-connected-foreground = ${colors.material-foreground}
@@ -271,11 +220,7 @@ format-playing-padding = ${variables.label-padding}
 format-paused-padding = ${variables.label-padding}
 format-stopped-padding = ${variables.label-padding}
 
-;=====================================================
-;   section/base_right_light
-;=====================================================
 [section/base_right_light]
-
 format-foreground = ${colors.material-foreground}
 format-background = ${colors.material-light-background}
 format-connected-foreground = ${colors.material-foreground}
@@ -311,169 +256,102 @@ format-playing-padding = ${variables.label-padding}
 format-paused-padding = ${variables.label-padding}
 format-stopped-padding = ${variables.label-padding}
 
-;=====================================================
-;   module/lsp
-;=====================================================
 [module/lsp]
 type = custom/text
-
 content = %{T3}%{T-}
 content-foreground = ${colors.material-foreground}
 content-background = ${colors.material-primary}
 
-;=====================================================
-;   module/lsd
-;=====================================================
 [module/lsd]
 type = custom/text
-
 content = %{T3}%{T-}
 content-foreground = ${colors.material-foreground}
 content-background = ${colors.material-dark-background}
 
-;=====================================================
-;   module/lsl
-;=====================================================
 [module/lsl]
 type = custom/text
-
 content = %{T3}%{T-}
 content-foreground = ${colors.material-foreground}
 content-background = ${colors.material-light-background}
 
-;=====================================================
-;   module/ldl
-;=====================================================
 [module/ldl]
 type = custom/text
-
 content = %{T3}%{T-}
 content-foreground = ${colors.material-dark-background}
 content-background = ${colors.material-light-background}
 
-;=====================================================
-;   module/ldp
-;=====================================================
 [module/ldp]
 type = custom/text
-
 content = %{T3}%{T-}
 content-foreground = ${colors.material-dark-background}
 content-background = ${colors.material-primary}
 
-;=====================================================
-;   module/lpd
-;=====================================================
 [module/lpd]
 type = custom/text
-
 content = %{T3}%{T-}
 content-foreground = ${colors.material-primary}
 content-background = ${colors.material-dark-background}
 
-;=====================================================
-;   module/lpl
-;=====================================================
 [module/lpl]
 type = custom/text
-
 content = %{T3}%{T-}
 content-foreground = ${colors.material-primary}
 content-background = ${colors.material-light-background}
 
-;=====================================================
-;   module/rsp
-;=====================================================
 [module/rsp]
 type = custom/text
-
 content = %{T3}%{T-}
 content-foreground = ${colors.material-foreground}
 content-background = ${colors.material-primary}
 
-;=====================================================
-;   module/rsd
-;=====================================================
 [module/rsd]
 type = custom/text
-
 content = %{T3}%{T-}
 content-foreground = ${colors.material-foreground}
 content-background = ${colors.material-dark-background}
 
-;=====================================================
-;   module/rsl
-;=====================================================
 [module/rsl]
 type = custom/text
-
 content = %{T3}%{T-}
 content-foreground = ${colors.material-foreground}
 content-background = ${colors.material-light-background}
 
-;=====================================================
-;   module/rdp
-;=====================================================
 [module/rdp]
 type = custom/text
-
 content = %{T3}%{T-}
 content-foreground = ${colors.material-primary}
 content-background = ${colors.material-dark-background}
 
-;=====================================================
-;   module/rld
-;=====================================================
 [module/rld]
 type = custom/text
-
 content = %{T3}%{T-}
 content-foreground = ${colors.material-dark-background}
 content-background = ${colors.material-light-background}
 
-;=====================================================
-;   module/rlp
-;=====================================================
 [module/rlp]
 type = custom/text
-
 content = %{T3}%{T-}
 content-foreground = ${colors.material-primary}
 content-background = ${colors.material-light-background}
 
-;=====================================================
-;   module/rpd
-;=====================================================
 [module/rpd]
 type = custom/text
-
 content = %{T3}%{T-}
 content-foreground = ${colors.material-dark-background}
 content-background = ${colors.material-primary}
 
-;=====================================================
-;   module/rpl
-;=====================================================
 [module/rpl]
 type = custom/text
-
 content = %{T3}%{T-}
 content-foreground = ${colors.material-light-background}
 content-background = ${colors.material-primary}
 
-;=====================================================
-;   module/user
-;=====================================================
 [module/user]
 type = custom/text
-
 content = %{T5}%{T-} %{T2}SpaceX%{T-}
 content-background = ${colors.material-primary}
 content-padding = ${variables.label-padding}
 
-;=====================================================
-;   module/title
-;=====================================================
 [module/title]
 type = internal/xwindow
 inherit = section/base_left_light
@@ -481,9 +359,6 @@ inherit = section/base_left_light
 label = %{T5}%{T-} %title%
 label-maxlen = ${variables.label-maxlen}
 
-;=====================================================
-;   module/i3
-;=====================================================
 [module/i3]
 type = internal/i3
 index-sort = true
@@ -510,9 +385,6 @@ label-urgent = %{T4}◎%{T-} %index%
 label-urgent-font = 2
 label-urgent-padding = ${variables.label-padding}
 
-;=====================================================
-;   module/mpd
-;=====================================================
 [module/mpd]
 type = internal/mpd
 inherit = section/base_right_light
@@ -531,9 +403,6 @@ label-song = %{T5}%{T-} %artist% - %title%
 
 label-offline = mpd is offline
 
-;=====================================================
-;   module/cpu
-;=====================================================
 [module/cpu]
 type = internal/cpu
 inherit = section/base_right_dark
@@ -541,9 +410,6 @@ interval = 1
 
 label = %{T5}%{T-} %percentage:3%%
 
-;=====================================================
-;   module/memory
-;=====================================================
 [module/memory]
 type = internal/memory
 inherit = section/base_right_dark
@@ -551,9 +417,6 @@ interval = 1
 
 label = %{T5}%{T-} %percentage_used:3%%
 
-;=====================================================
-;   module/eth
-;=====================================================
 [module/eth]
 type = internal/network
 inherit = section/base_left_dark
@@ -563,9 +426,6 @@ accumulate-stats = true
 
 label-connected = "%{T5}%{T-} %upspeed:8% %{T3}%{T-} %{T5}%{T-} %downspeed:8%"
 
-;=====================================================
-;   module/time
-;=====================================================
 [module/time]
 type = internal/date
 inherit = section/base_right_primary
@@ -574,9 +434,7 @@ time = %H:%M
 
 label = %{T5}%{T-} %{T2}%time%%{T-}
 
-;=====================================================
-;   module/date
-;=====================================================
+
 [module/date]
 type = internal/date
 inherit = section/base_right_primary
@@ -585,9 +443,6 @@ date = %a %d.%m
 
 label = %{T5}%{T-} %{T2}%date%%{T-}
 
-;=====================================================
-;   module/volume
-;=====================================================
 [module/volume]
 type = internal/alsa
 inherit = section/base_right_dark
@@ -595,9 +450,7 @@ interval = 1
 
 label-volume = %{T5}%{T-} %percentage:3%%
 label-muted = %{T5}%{T-} %percentage:3%%
-;=====================================================
-;   module/battery
-;=====================================================
+
 [module/battery]
 type = internal/battery
 inherit = section/base_right_dark
@@ -614,9 +467,6 @@ label-discharging = %{T5}%{T-} %percentage:3%%
 format-full = <label-full>
 label-full = %{T5}%{T-} %percentage:3%%
 
-;=====================================================
-;   module/temperature
-;=====================================================
 [module/temperature]
 type = internal/temperature
 inherit = section/base_right_dark
@@ -626,15 +476,9 @@ warn-temperature = 70
 label = %{T5}%{T-} %temperature-c:3%
 label-warn = %{T5}%{T-} %temperature-c:3%
 
-;=====================================================
-;   settings
-;=====================================================
 [settings]
 screenchange-reload = true
 
-;=====================================================
-;   global/wm
-;=====================================================
 [global/wm]
 margin-top = 0
 margin-bottom = 0
